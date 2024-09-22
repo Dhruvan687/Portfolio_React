@@ -7,7 +7,7 @@ import '../App.css'
 
 const Footer=()=>{
    return(
-     <div className="main">
+     <div className="footer">
         <Tag1/>
         <Tag2/>
         <Tag3/>
