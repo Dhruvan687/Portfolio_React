@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color:#fff;
+    /* background: rgb(0, 0, 0); */
+}
+
+.main{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: rgb(17, 2, 45);
+    
+}
+.tag1{
+    margin: auto
+}
+.tag2{
+    margin: auto
+}
+.tag3{
+    margin: auto
+}
+.tag4{
+    margin: auto
+}
+.tag1 h1{
+    color: white;
+    margin: 25px 0 35px 0;
+}
+
+.tag1 p{
+    text-align: left;
+    margin: 10px 0;
+    cursor: pointer;
+    color: #aeaeae;
+    font-size: 19px;
+}
+
+
+.tag2 h1{
+    color: white;
+    margin: 25px 0 35px 0;
+}
+
+.tag2 p{
+    text-align: left;
+    margin: 10px 0;
+    cursor: pointer;
+    color: #aeaeae;
+    font-size: 19px;
+}
+
+
+
+.tag3 h1{
+    color: white;
+    margin: 25px 0 35px 0;
+}
+
+.tag3 p{
+    text-align: left;
+    margin: 10px 0;
+    cursor: pointer;
+    color: #aeaeae;
+    font-size: 19px;
+}
+
+
+
+
+
+.tag4 h1{
+    color: white;
+    margin: 25px 0 35px 0;
+}
+
+.tag4 p{
+    text-align: left;
+    margin: 10px 0;
+    cursor: pointer;
+    color: #aeaeae;
+    font-size: 19px;
+}
+
+.fa-angle-right{
+    font-size: 20px;
+    margin-right: 5px;
+    transition: 0.5s;
+    /* color: black; */
+}
+
+p:hover .fa-angle-right{
+    color: white;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+p:hover {
+    color: white;
+}
