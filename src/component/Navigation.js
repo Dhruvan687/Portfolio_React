@@ -29,11 +29,11 @@ const Navigation = () => {
           </li>
           <li>
             <a href="/products" className="for-desktop" onClick={handleCollapse}>
-              courses
+              SKILLS
             </a>
             <input type="checkbox" id="showMenu" />
             <label htmlFor="showMenu" className="for-mobile" onClick={handleCollapse}>
-              courses
+              SKILLS
             </label>
             <div className="Mega-Box">
               <div className="Mega-Box-Content">
@@ -41,62 +41,91 @@ const Navigation = () => {
                   <img src="assets/images/istockphoto-1166954025-170667a-removebg-preview.png" />
                 </div>
                 <div className="Content-Row">
-                  <header>PROGRAMMING</header>
+                  <header>Front-End</header>
                   <ul className="Mega-Links">
                     <li>
-                      <a href="#" onClick={handleCollapse}>C PROGRAMMING</a>
+                      <a href="#" onClick={handleCollapse}>React Js</a>
                     </li>
                     <li>
-                      <a href="#" onClick={handleCollapse}>C++ PROGRAMMING</a>
+                      <a href="#" onClick={handleCollapse}>Javacript</a>
                     </li>
                     <li>
-                      <a href="#" onClick={handleCollapse}>JAVA PROGRAMMING</a>
+                      <a href="#" onClick={handleCollapse}>HTML5</a>
                     </li>
                     <li>
-                      <a href="#" onClick={handleCollapse}>C# PROGRAMMING</a>
+                      <a href="#" onClick={handleCollapse}>Css3</a>
                     </li>
                     <li>
-                      <a href="#" onClick={handleCollapse}>PYTHON PROGRAMMING</a>
+                      <a href="#" onClick={handleCollapse}>Bootstrap</a>
+                    </li>
+                    <li>
+                      <a href="#" onClick={handleCollapse}>Media-Query</a>
+                    </li>
+                    <li>
+                      <a href="#" onClick={handleCollapse}>Webpack</a>
+                    </li>
+                    <li>
+                      <a href="#" onClick={handleCollapse}>Swagger UI</a>
                     </li>
                   </ul>
                 </div>
                 <div className="Content-Row">
-                  <header>WEB DEVELOPMENT</header>
+                  <header>UX-UI</header>
                   <ul className="Mega-Links">
                     <li>
-                      <a href="#" onClick={handleCollapse}>Website Design</a>
+                      <a href="#" onClick={handleCollapse}>Adobe XD</a>
                     </li>
                     <li>
-                      <a href="#" onClick={handleCollapse}>WEB DEVELOPMENT WITH DOTNET CORE</a>
+                      <a href="#" onClick={handleCollapse}>Figma</a>
                     </li>
                     <li>
-                      <a href="#" onClick={handleCollapse}>WEB DEVELOPMENT WITH DOTNET MVC</a>
+                      <a href="#" onClick={handleCollapse}>Sketch</a>
                     </li>
                     <li>
-                      <a href="#" onClick={handleCollapse}>WEB DEVELOPMENT WITH PYTHON & DJANGO</a>
+                      <a href="#" onClick={handleCollapse}>Adobe AI</a>
+                    </li>
+                    <li>
+                      <a href="#" onClick={handleCollapse}>Adobe Photoshop</a>
                     </li>
                   </ul>
                 </div>
                 <div className="Content-Row">
-                  <header>FRONTEND DEVELOPMENT</header>
+                  <header>Back-End</header>
                   <ul className="Mega-Links">
                     <li>
-                      <a href="#" onClick={handleCollapse}>FRONTEND NINJA (COMPLETE FRONTEND DEVE)</a>
+                      <a href="#" onClick={handleCollapse}>Node.js</a>
                     </li>
                     <li>
-                      <a href="#" onClick={handleCollapse}>HTML CSS MEDIA QUERY</a>
+                      <a href="#" onClick={handleCollapse}>Fast API</a>
                     </li>
                     <li>
-                      <a href="#" onClick={handleCollapse}>JAVASCRIPT JQUERY</a>
+                      <a href="#" onClick={handleCollapse}>REST APIs</a>
                     </li>
                     <li>
-                      <a href="#" onClick={handleCollapse}>EXPERT IN JAVASCRIPT</a>
+                      <a href="#" onClick={handleCollapse}>Flask</a>
                     </li>
                     <li>
-                      <a href="#" onClick={handleCollapse}>REACT JS DEVELOPMENT</a>
+                      <a href="#" onClick={handleCollapse}>Django</a>
+                    </li>
+                  </ul>
+                </div>
+                <div className="Content-Row">
+                  <header>Databases</header>
+                  <ul className="Mega-Links">
+                    <li>
+                      <a href="#" onClick={handleCollapse}>MySQL</a>
                     </li>
                     <li>
-                      <a href="#" onClick={handleCollapse}>FRONT END WITH JS & REACT JS</a>
+                      <a href="#" onClick={handleCollapse}>PostgreSQL</a>
+                    </li>
+                    <li>
+                      <a href="#" onClick={handleCollapse}>PL/SQL</a>
+                    </li>
+                    <li>
+                      <a href="#" onClick={handleCollapse}>MongoDB</a>
+                    </li>
+                    <li>
+                      <a href="#" onClick={handleCollapse}>Firebase</a>
                     </li>
                   </ul>
                 </div>

@@ -1,10 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
-
-// import {FontAwesomeIcon} from "@fortawesome/react-fontawsome";
-// import {faangleright} from "@fortawesome/free-solid-svg-icons"; 
-import '../App.css'
+import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro'  
+import '../../App.css'
 
 const Tag3=()=>{
    return(
