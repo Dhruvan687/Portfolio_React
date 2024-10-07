@@ -1,138 +1,147 @@
-import React, { useEffect } from 'react';
-import '../App.css';
+import React from 'react'
 
-const Navigation = () => {
-  const handleCollapse = () => {
-    document.getElementById('button-menu').checked = false;
-    document.getElementById('showMenu').checked = false;
-    document.getElementById('showDrop').checked = false;
-  };
-
-  useEffect(() => {
-    const toggle = document.getElementById('nav-toggle');
-    const nav = document.getElementById('nav-menu');
-
-    if (toggle && nav) {
-      toggle.addEventListener('click', () => {
-        nav.classList.toggle('show-menu');
-      });
-    }
-
-    // Cleanup event listener on component unmount
-    return () => {
-      if (toggle) {
-        toggle.removeEventListener('click', () => {
-          nav.classList.toggle('show-menu');
-        });
-      }
-    };
-  }, []);
-
+export default function Navigation() {
   return (
-    // <!--=============== HEADER ===============-->
-    <header className="header">
-       <nav className="nav container">
-          <div className="nav__data">
-             <a href="#" className="nav__logo">
-                <i className="ri-planet-line"></i> Portfolio
-             </a>
-             
-             <div className="nav__toggle" id="nav-toggle">
-                <i className="ri-menu-line nav__burger"></i>
-                <i className="ri-close-line nav__close"></i>
-             </div>
-          </div>
+    <div>
+         <nav class="Main-Nav">
+      <div class="Nav-Wrapper">
+        <div class="logo">
+          <img src="assets/images/logo.png" alt=""/>
+        </div>
+        <input type="checkbox" name="nav-slide" id="button-menu"></input>
+        <input type="checkbox" name="nav-slide" id="button-menu"></input>
+        <ul class="Nav-Links">
+          <label
+            for="button-menu"
+            class="toggle-button-nav button-cancel "
+          >
+            <i class="fi fi-rr-cross"></i>
+          </label>
+          <li>
+            <a href="/">INTERNSHIP</a>
+          </li>
+          <li>
+            <a href="/products" class="for-desktop">
+              SKILLS
+            </a>
+            <input type="checkbox" id="showMenu"></input>
+            <label for="showMenu" class="for-mobile" >
+              SKILLS
+            </label>
+            <div class="Mega-Box">
+              <div class="Mega-Box-Content">
+                <div class="Content-Row">
+                  <img src="assets/images/istockphoto-1166954025-170667a-removebg-preview.png" />
+                </div>
+                <div class="Content-Row">
+                  <header>PROGRAMMING LANGUAGE</header>
 
-          {/* <!--=============== NAV MENU ===============--> */}
-          <div className="nav__menu" id="nav-menu">
-             <ul className="nav__list">
-                <li><a href="#" className="nav__link">Home</a></li>
-
-                <li><a href="#" className="nav__link">Company</a></li>
-
-                {/* <!--=============== DROPDOWN 1 ===============--> */}
-                <li className="dropdown__item">
-                   <div className="nav__link">
-                      Analytics <i className="ri-arrow-down-s-line dropdown__arrow"></i>
-                   </div>
-
-                   <ul className="dropdown__menu">
-                      <li>
-                         <a href="#" className="dropdown__link">
-                            <i className="ri-pie-chart-line"></i> Overview
-                         </a>                          
-                      </li>
-
-                      <li>
-                         <a href="#" className="dropdown__link">
-                            <i className="ri-arrow-up-down-line"></i> Transactions
-                         </a>
-                      </li>
-
-                      {/* <!--=============== DROPDOWN SUBMENU ===============--> */}
-                      <li className="dropdown__subitem">
-                         <div className="dropdown__link">
-                            <i className="ri-bar-chart-line"></i> Reports <i className="ri-add-line dropdown__add"></i>
-                         </div>
-
-                         <ul className="dropdown__submenu">
-                            <li>
-                               <a href="#" className="dropdown__sublink">
-                                  <i className="ri-file-list-line"></i> Documents
-                               </a>
-                            </li>
-    
-                            <li>
-                               <a href="#" className="dropdown__sublink">
-                                  <i className="ri-cash-line"></i> Payments
-                               </a>
-                            </li>
-    
-                            <li>
-                               <a href="#" className="dropdown__sublink">
-                                  <i className="ri-refund-2-line"></i> Refunds
-                               </a>
-                            </li>
-                         </ul>
-                      </li>
-                   </ul>
-                </li>
-                
-                <li><a href="#" className="nav__link">Products</a></li>
-
-                {/* <!--=============== DROPDOWN 2 ===============--> */}
-                <li className="dropdown__item">
-                   <div className="nav__link">
-                      Users <i className="ri-arrow-down-s-line dropdown__arrow"></i>
-                   </div>
-
-                   <ul className="dropdown__menu">
-                      <li>
-                         <a href="#" className="dropdown__link">
-                            <i className="ri-user-line"></i> Profiles
-                         </a>                          
-                      </li>
-
-                      <li>
-                         <a href="#" className="dropdown__link">
-                            <i className="ri-lock-line"></i> Accounts
-                         </a>
-                      </li>
-
-                      <li>
-                         <a href="#" className="dropdown__link">
-                            <i className="ri-message-3-line"></i> Messages
-                         </a>
-                      </li>
-                   </ul>
-                </li>
-
-                <li><a href="#" className="nav__link">Contact</a></li>
-             </ul>
-          </div>
-       </nav>
-    </header>
-  );
-};
-
-export default Navigation;
+                  <ul class="Mega-Links">
+                    <li>
+                      <a href="#">JAVA SCRIPT</a>
+                    </li>
+                    <li>
+                      <a href="#">REACT JS</a>
+                    </li>
+                    <li>
+                      <a href="#">HTML</a>
+                    </li>
+                    <li>
+                      <a href="#">CSS BOOTSTRAP</a>
+                    </li>
+                    <li>
+                      <a href="#">KOTLIN</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="Content-Row">
+                  <header>WEB DEVELOPMENT TOOLS</header>
+                  <ul class="Mega-Links">
+                    <li>
+                      <a href="#">VS CODE</a>
+                    </li>
+                    <li>
+                      <a href="#">UX/UI DESIGNING</a>
+                    </li>
+                    <li>
+                      <a href="#">FIGMA</a>
+                    </li>
+                    <li>
+                      <a href="#">ADOBE XD</a>
+                    </li>
+                    <li>
+                      <a href="#">ILLUSTRATOR</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="Content-Row">
+                  <header>FOTNTEND DEVELOPEMENT</header>
+                  <ul class="Mega-Links">
+                    <li>
+                      <a href="#">FRONTEND NINJA (COMPLET FRONTEND DEVE)</a>
+                    </li>
+                    <li>
+                      <a href="#">HTML CSS MEDIQ QUERY</a>
+                    </li>
+                    <li>
+                      <a href="#">JAVASCRIPT  JQUERY</a>
+                    </li>
+                    <li>
+                      <a href="#">EXPERT IN JAVASCRIPT</a>
+                    </li>
+                    <li>
+                      <a href="#">REACT JS DEVELOPMENT</a>
+                    </li>
+                    <li>
+                      <a href="#">FRONT END WITH JS & REACT JS</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+              <a href="/">blog</a>
+            </li>
+          <li>
+            <a href='/contact-us'>Contact Us</a>
+          </li>
+          <li>
+              <a href="/">why us?</a>
+            </li>
+          <li>
+              
+            <a href="#" class="for-desktop">
+              PROJECTS
+            </a>
+            <input type="checkbox" id="showDrop"></input>
+            <label for="showDrop" class="for-mobile">
+              PROJECTS
+            </label>
+            <ul class="Drop-Down">
+              <li>
+              <a href='/about-us'>HTML CSS</a>
+              </li>
+              <li>
+                <a href="#">Programming fundamentals</a>
+              </li>
+              <li>
+                <a href="#">JQuery </a>
+              </li>
+              <li>
+                <a href="#">Responsive Design</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <label
+          for="button-menu"
+          class="toggle-button-nav button-menu "
+        >
+          <i class="fi fi-rr-align-justify"></i>
+        </label>
+      </div>
+    </nav>
+    </div>
+  )
+}
